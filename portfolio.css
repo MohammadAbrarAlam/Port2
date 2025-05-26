@@ -1,0 +1,512 @@
+
+    body {
+      scroll-behavior: smooth;
+    }
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+    .hero h1 span .a{
+      color: white;
+      transform: rotateX(0deg);
+      transition: all 2s linear;
+    }
+   .hero h1 span.a:hover{
+      transform: rotateX(90deg);
+      color: tomato;
+    }
+    .hero h1 span .b{
+      color: white;
+      transform: rotateX(0deg);
+    }
+    .hero h1 span.b:hover{
+      transform: rotateY(90deg);
+      color: rgb(34, 177, 220);
+    }
+
+    .hero h1 span .c{
+      color: white;
+      transform: rotateX(0deg);
+    }
+
+    .hero h1 span.c:hover{
+      transform: rotate(90deg);
+      color: rgb(222, 22, 145);
+    }
+    
+    .hero p {
+      font-size: 1.5rem;
+      opacity: 0;
+      word-spacing: 0;
+      animation: animate 2s steps(3) infinite;
+    }
+    @keyframes animate{
+      0%{
+        opacity: 0;
+        word-spacing: 0px;
+      }
+      50%{
+        opacity:1;
+        word-spacing:10px;
+      }
+      100%{
+        opacity:0;
+        word-spacing:0px;
+      }
+    }
+
+  /* Navbar link hover effect */
+  .nav-hover:hover {
+    color: #00d9ff !important;
+    text-shadow: 0 0 10px rgba(0, 217, 255, 0.7);
+    transition: all 0.3s ease;
+  }
+
+  /* Animated entrance */
+  .animated-nav {
+    animation: slideDown 0.7s ease-in-out;
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* Smooth scrolling for sections */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Optional: fix content overlap with navbar */
+  section {
+    scroll-margin-top: 80px;
+  }
+
+/* Personal Info Section */
+.fade-in {
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Profile Image Styling */
+  .profile-img {
+    width: 180px;
+    height: 180px;
+    padding-top: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #00d9ff;
+    box-shadow: 0 8px 20px rgba(0, 217, 255, 0.3);
+    transition: transform 0.3s ease;
+  }
+
+  .profile-img:hover {
+    transform: scale(1.05);
+    transform: rotateY(360deg);
+  }
+
+  /* Glowing Name Animation */
+  .name-glow {
+    color:#fff;
+    animation: glowText 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes glowText {
+    from {
+      text-shadow: 0 0 10px #fff,0 0 20px #fff,0 0 30px #e60073,0 0 40px #e60073,0 0 50px #e60073,;
+    }
+    to {
+      text-shadow: 0 0 20px #fff,0 0 30px #ff4da6,0 0 40px #ff4da6,0 0 50px #ff4da6,0 0 60px #ff4da6;
+    }
+  }
+
+  /* Title Hover Effect */
+  .title-glow {
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+
+  .title-glow:hover {
+    color:gray;
+    text-shadow: 0 0 4px #00f2fe,0 0 6px #fff,0 0 8px magenta;
+  }
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .divider {
+      width: 60px;
+      height: 4px;
+      background-color: #0d6efd;
+      margin: 0 auto 2rem;
+    }
+    section {
+      padding: 60px 0;
+    }
+    .progress {
+      height: 20px;
+    }
+  
+/* Profile Summary Section */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-in-out;
+}
+.fade-in.animate-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Glowing text effect */
+.text-glow {
+  color: #00d9ff;
+  text-shadow: 0 0 5px #00d9ff, 0 0 10px #00d9ff;
+  font-weight: 700;
+}
+
+/* Divider line */
+.divider {
+  width: 60px;
+  height: 4px;
+  background-color: #00d9ff;
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+
+/* Card styling */
+.profile-card {
+  background: #f9f9f9;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 217, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 217, 255, 0.3);
+}
+
+/* Button hover glow */
+.btn-hover-glow {
+  transition: all 0.3s ease;
+}
+.btn-hover-glow:hover {
+  color: #fff;
+  background-color: #00d9ff;
+  box-shadow: 0 0 10px #00d9ff, 0 0 20px #00d9ff;
+}
+
+/* About Section*/
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+.fade-in.animate-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Glowing title */
+.section-title-glow {
+  color: #00bcd4;
+  text-shadow: 0 0 8px #00bcd4;
+  font-weight: 700;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* List container style */
+.custom-box {
+  background-color: #ffffff;
+  padding: 25px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+
+/* Each list item */
+.animated-list .list-group-item {
+  font-size: 1.1rem;
+  color: #333;
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border: none;
+  border-left: 5px solid transparent;
+  transform: translateX(0);
+  transition: transform 0.4s ease, border-color 0.4s ease, background-color 0.4s ease;
+  font-family: 'Verdana', sans-serif;
+}
+
+/* Hover effect */
+.animated-list .list-group-item:hover {
+  transform: translateX(10px);
+  background-color: #e8faff;
+  border-left: 5px solid #00bcd4;
+}
+
+/* Links */
+.animated-list a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.animated-list a:hover {
+  color: #00bcd4;
+  text-shadow: 0 0 6px #00bcd4;
+}
+
+/* Skills-Section */
+
+.skills-section {
+    background: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+  }
+
+  /* Glowing section title */
+  .section-title-glow {
+    color: #007bff;
+    text-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+    font-weight: 700;
+  }
+
+  /* Skill label styling */
+  .skill-label {
+    font-weight: 600;
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+    display: inline-block;
+    color: #444;
+  }
+
+  /* Fade-in animation */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+
+  .fade-in.animate-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Progress bar base styling */
+  .progress {
+    height: 28px;
+    background-color: #e9ecef;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 3px rgb(0 0 0 / 0.1);
+  }
+
+  .progress-bar {
+    font-weight: 600;
+    line-height: 28px;
+    transition: width 1.8s ease-in-out;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.15);
+    color: #fff;
+  }
+
+  /* Hover effect on progress bar */
+  .progress:hover .progress-bar {
+    filter: brightness(110%);
+    transform: scaleX(1.05);
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  /* Button styling */
+  #learnMoreBtn {
+    font-weight: 600;
+    padding: 0.7rem 2.2rem;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+  }
+
+  #learnMoreBtn:hover {
+    background-color: #007bff;
+    color: #fff;
+    box-shadow: 0 0 12px rgba(0, 123, 255, 0.7);
+    transform: scale(1.05);
+  }
+
+
+/* Project Section */
+
+ .section-title-glow {
+    color: #007bff;
+    text-shadow: 0 0 12px rgba(0, 123, 255, 0.8);
+    font-weight: 700;
+  }
+
+  /* Light shadow for cards */
+  .shadow-light {
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.12);
+    border-radius: 0.5rem;
+  }
+
+  /* Card hover effect with smooth transition */
+  .project-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+  }
+  .project-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+  }
+
+  /* Fade-in animation */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  .fade-in.animate-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Button styling */
+  .btn-animated {
+    font-weight: 600;
+    padding: 0.6rem 1.8rem;
+    border-radius: 30px;
+    transition: all 0.35s ease;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.15);
+  }
+
+  .btn-animated:hover {
+    background-color: #0056b3;
+    color: #fff;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.7);
+    transform: scale(1.1);
+  }
+
+  /* List styling with margin and padding */
+  ul.list-unstyled {
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* Contact Me */
+
+    .section-title-glow {
+    color: #007bff;
+    text-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    font-weight: bold;
+  }
+
+  .shadow-light {
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+  }
+
+  .input-focus:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+    transition: 0.4s ease;
+  }
+
+  .btn-animated {
+    padding: 0.6rem 1.8rem;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+  }
+
+  .btn-animated:hover {
+    background-color: #0056b3;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(0, 123, 255, 0.5);
+  }
+
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .contact-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.2);
+  }
+
+  /* Footer  */
+
+  
+  #footer {
+    animation: fadeInUp 1.5s ease;
+  }
+
+  .email-link:hover {
+    color: #0dcaf0;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+
+  .icon-link {
+    color: #ffffff;
+    margin: 0 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .icon-link:hover {
+    color: #0dcaf0;
+    transform: scale(1.2);
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  p .mb-2{
+    text-decoration: none;
+  }
+  .mt-3 a{
+    text-decoration: none;
+  }

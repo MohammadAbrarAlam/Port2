@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top py-3 animated-nav">
+    <div class="container">
+    <!-- Logo / Brand -->
+      <a class="navbar-brand fw-bold text-info" href="#">MyPortfolio</a>
+
+      <!-- Toggler for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+       <!-- Navbar Links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link nav-hover" href="personal.html">Summary</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-hover" href="education.html">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-hover" href="skills.html">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-hover" href="project.html">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h1><span class="a">MOHAMMAD</span> <span class="b">ABRAR </span><span class="c">ALAM</span></h1>
+    <p class="para">Web Developer | Designer | Python Developer</p>
+    <a href="#personal-info" class="btn btn-light mt-4">Explore</a>
+  </section>
+
+ <!-- Personal Info Section -->
+  <section class="container py-5 text-center">
+    <div class="fade-in" id="personal-info">
+      <img src="photo.jpg" alt="Profile" class="profile-img mb-3" id="image" />
+      <h1 class="fw-bold name-glow">ABRAR ALAM</h1>
+      <p class="text-muted fs-5 title-glow">Python Developer | Cloud Computing</p>
+    </div>
+  </section>
+
+  <!-- Container 2: Profile Summary -->
+  <section class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card shadow-lg profile-card fade-in">
+          <h2 class="card-header section-title text-center text-glow text-danger">Profile Summary</h2>
+          <div class="card-body text-dark">
+            <hr class="divider mx-auto">
+            <ul class="lead text-start ps-4">
+              <li>Skilled in Python and Django Development.</li>
+              <li>Built Smart Attendance System and web platforms.</li>
+              <li>Created 50+ web animations</li>
+              <li>Earned Elite Medal in Cloud Computing</li>
+            </ul>
+          </div>
+          <div class="card-footer text-center">
+            <button class="btn btn-outline-info btn-hover-glow">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--About Section-->
+  <section id="personal-info" class="container py-5 fade-in">
+    <h2 class="text-center mb-4 section-title-glow">About Me</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <ul class="list-group animated-list custom-box rounded-4">
+          <li class="list-group-item"><strong>Name:</strong> MOHAMMAD ABRAR ALAM</li>
+          <li class="list-group-item"><strong>Email:</strong> abrarimam7860@gamil.com</li>
+          <li class="list-group-item"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/abrar-alam-233175" target="_blank">linkedin.com/in/abrar-alam-233175</a></li>
+          <li class="list-group-item"><strong>GitHub:</strong> <a href="https://github.com/Md200411/Md200411" target="_blank">github.com/Md200411/Md200411</a></li>
+          <li class="list-group-item"><strong>Resume:</strong> <a href="https://sleet-abaft-earthquake.glitch.me" target="_blank">View Resume</a></li>
+          <li class="list-group-item"><strong>Address:</strong> Muzaffarpur, Bihar</li>
+          <li class="list-group-item"><strong>Languages:</strong> Hindi, English</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Skills  Section-->
+  <section id="skills" class="skills-section py-5">
+    <div class="container fade-in">
+      <h2 class="text-center mb-5 section-title-glow">Technical Skills</h2>
+
+      <div class="skill mb-4">
+        <label class="skill-label">HTML</label>
+        <div class="progress" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar bg-success" style="width: 90%;">90%</div>
+        </div>
+      </div>
+
+      <div class="skill mb-4">
+        <label class="skill-label">CSS</label>
+        <div class="progress" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar bg-info" style="width: 85%;">85%</div>
+        </div>
+      </div>
+
+      <div class="skill mb-4">
+        <label class="skill-label">JavaScript</label>
+        <div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar bg-warning" style="width: 75%;">75%</div>
+        </div>
+      </div>
+
+      <div class="skill mb-4">
+        <label class="skill-label">Bootstrap</label>
+        <div class="progress" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar bg-primary" style="width: 80%;">80%</div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <button id="learnMoreBtn" class="btn btn-outline-primary btn-lg shadow-sm">
+          Learn More Skills
+        </button>
+      </div>
+    </div>
+  </section>
+<!--Project Section-->
+  <section id="projects" class="container py-5">
+    <h2 class="text-center mb-5 section-title-glow fade-in">Projects</h2>
+    <div class="row g-4">
+      
+      <div class="col-md-4">
+        <div class="card project-card fade-in shadow-light p-3">
+          <div class="card-header text-center fs-5 fw-bold py-3">Smart Attendance System</div>
+          <div class="card-body px-4">
+            <ul class="list-unstyled mb-4">
+              <li>Individual Full Stack project developed using Python</li>
+              <li>Libraries: Face Recognition, QR code, OpenCV, Django</li>
+              <li>Database: MySQL</li>
+              <li>Automates attendance by capturing and identifying faces & scanning QR code</li>
+              <li>Improves accuracy and efficiency in student attendance</li>
+              <li>Reducing manual error</li>
+            </ul>
+            <a href="project-link" target="_blank" class="btn btn-primary w-100 btn-animated">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card project-card fade-in shadow-light p-3">
+          <div class="card-header text-center fs-5 fw-bold py-3">ITC (IT Companies)</div>
+          <div class="card-body px-4">
+            <ul class="list-unstyled mb-4">
+              <li>Full Stack project showcasing IT companies in India</li>
+              <li>Backend: Django, Python</li>
+              <li>Frontend: HTML, CSS, JavaScript, Bootstrap</li>
+              <li>Displays company details: services, location, profiles</li>
+              <li>Designed responsive, user-friendly interface</li>
+              <li>It displays detailed information about companies.</li>
+            </ul>
+            <a href="project-link" target="_blank" class="btn btn-primary w-100 btn-animated">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card project-card fade-in shadow-light p-3">
+          <div class="card-header text-center fs-5 fw-bold py-3">Supporter (Voice Assistant)</div>
+          <div class="card-body px-4">
+            <ul class="list-unstyled mb-4">
+              <li>Individual project using Python</li>
+              <li>Technologies: Pyttsx3, Speech Recognition, DateTime</li>
+              <li>Performs voice-activated tasks: open websites/apps, weather updates, time reporting</li>
+              <li>Designed with offline capabilities for basic tasks without internet dependency</li>
+              <li>This project showcases real-time voice interaction</li>
+            </ul>
+            <a href="project-link" target="_blank" class="btn btn-primary w-100 btn-animated">View Project</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--Contact Me-->
+    <section id="contact" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 section-title-glow">Contact Me</h2>
+        <form id="contactForm" class="contact-form shadow-light p-4 rounded bg-white">
+          <div class="mb-4">
+            <label class="form-label fw-bold">Name</label>
+            <input type="text" class="form-control form-control-lg input-focus" placeholder="Your name" required>
+          </div>
+          <div class="mb-4">
+            <label class="form-label fw-bold">Email</label>
+            <input type="email" class="form-control form-control-lg input-focus" placeholder="Your email" required>
+          </div>
+          <div class="mb-4">
+            <label class="form-label fw-bold">Message</label>
+            <textarea class="form-control form-control-lg input-focus" rows="4" placeholder="Your message" required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-lg btn-animated">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+    <div class="container text-center fade-in" id="footer">
+      <h5 class="mb-3">📧 Contact Me</h5>
+      
+      <p class="mb-2">
+        Email: 
+        <a href="mailto:abrarimam7860@gmail.com" class="text-info email-link">
+          abrarimam7860@gmail.com
+        </a>
+      </p>
+
+      <!-- Social Icons -->
+      <div class="mt-3">
+        <a href="https://github.com/Md200411" class="icon-link" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github fa-lg"></i>
+        </a>
+        <a href="https://linkedin.com/in/abrar-alam-233175" class="icon-link" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+        <a href="https://sleet-abaft-earthquake.glitch.me" class="icon-link" target="_blank" aria-label="Portfolio">
+          <i class="fas fa-globe fa-lg"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+      <hr class="bg-secondary my-3" style="width: 80%;" />
+      <p class="mb-0">&copy; 2025 abrarimam7860. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="portfolio.js"></script>
+</body>
+</html>
